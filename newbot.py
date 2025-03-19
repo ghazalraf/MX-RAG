@@ -16,6 +16,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+os.environ["USER_AGENT"] = "MyCustomAgent/1.0"
+
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Define model
